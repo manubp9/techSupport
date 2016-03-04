@@ -9,8 +9,8 @@ import java.util.ArrayList;
  */
 public class Responder
 {
-    Random aleatorio;
-    ArrayList <String> respuestas;
+    Random aleatorio;//atributo aleatorio
+    ArrayList <String> respuestas;//array list de tipo string
     /**
      * Construct a Responder - nothing to do
      */
@@ -18,8 +18,7 @@ public class Responder
     {
         aleatorio = new Random();
         respuestas = new ArrayList<>();
-        
-        respuestas.add("¿Puedes ser mas exacto?");
+        respuestas.add("¿Puedes ser mas exacto?");//añado las respuestas al array
         respuestas.add("Indicame el punto donde te da el fallo");
         respuestas.add("¿Has comprobado las conexiones?");
         respuestas.add("¿Cuantas veces has tenido este problema?");
@@ -32,9 +31,8 @@ public class Responder
      */
     public String generateResponse()
     {
-        int numeroAleatorio = aleatorio.nextInt(respuestas.size());
-        String respuestaAleatoria = respuestas.get(numeroAleatorio);
-        
+        int numeroAleatorio = aleatorio.nextInt(respuestas.size());//el maximo del numero aleatorio es el tamaño de la lista de respuestas
+        String respuestaAleatoria = respuestas.get(numeroAleatorio);//igualo la respuesta aleatoria a el elemento de la lista con el mismo numero.
         return respuestaAleatoria;
     }
 }
