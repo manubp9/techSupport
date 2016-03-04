@@ -31,8 +31,7 @@ public class Responder
      */
     public String generateResponse()
     {
-        int numeroAleatorio = aleatorio.nextInt(respuestas.size());//el maximo del numero aleatorio es el tamaño de la lista de respuestas
-        String respuestaAleatoria = respuestas.get(numeroAleatorio);//igualo la respuesta aleatoria a el elemento de la lista con el mismo numero.
-        return respuestaAleatoria;
+       return respuestas.get(aleatorio.nextInt(respuestas.size()));//igualo la respuesta aleatoria a el elemento de la lista con el mismo numero.
+       
     }
 }
