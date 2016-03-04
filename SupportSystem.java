@@ -35,11 +35,11 @@ public class SupportSystem
         boolean finished = false;
 
         printWelcome();
-
+         
         while(!finished) {
             String input = reader.getInput();
 
-            if(input.toLowerCase().startsWith("bye") || input.toLowerCase().endsWith("bye")) {
+            if(input.toLowerCase().trim().equals("bye")) {
                 finished = true;
             }
             else {
