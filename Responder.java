@@ -27,7 +27,7 @@ public class Responder
         respuestas.add("¿Su ordenador es portatil o de sobremesa?");
         respuestas.add("¿Que version utiliza, 1.1 o 1.2?");
         
-        respuestasCohincide.put("portatil" , "Has comprobado que esta version es para portatil?");
+        respuestasCohincide.put("portatil" , "Has comprobado que esta version es para portatil?");//añado las respuestas y la palabra clave al hasmap
         respuestasCohincide.put("sobremesa","Todas las versiones son compatibles con sobremesa");
         respuestasCohincide.put("1.1","Actualice a la version mas reciente su sw");
         respuestasCohincide.put("1.2","Espere a actualizaciones futuras");
@@ -39,7 +39,7 @@ public class Responder
      */
     public String generateResponse(String userInput)
     {
-        String respuesta = null;
+        String respuesta = null; //variable local inicializada a null
         respuesta = respuestasCohincide.get(userInput);//la variable local equivale a lo que le metas por pantalla,si existe dentro del hasMap
                                                        //Si existe devolvera la respuesta , si no sera null y pasara al if
         if(respuesta == null)

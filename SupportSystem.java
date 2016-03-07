@@ -43,7 +43,7 @@ public class SupportSystem
                 finished = true;
             }
             else {
-                String response = responder.generateResponse(input);
+                String response = responder.generateResponse(input);//le metemos input al parametro para que funcione con las palabras clave
                 System.out.println(response);
             }
         }
