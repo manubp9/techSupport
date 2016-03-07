@@ -21,12 +21,11 @@ public class Responder
         aleatorio = new Random();
         respuestas = new ArrayList<>();
         respuestasCohincide = new HashMap<>();
-        respuestas.add("¿Puedes ser mas exacto?");//añado las respuestas al array
+        respuestas.add("¿Puedes ser mas exacto?");//añado las preguntnas al array
         respuestas.add("Indicame el punto donde te da el fallo");
         respuestas.add("¿Has comprobado las conexiones?");
-        respuestas.add("¿Su ordenador es portatil o de sobremesa?");
-        respuestas.add("¿Que version utiliza, 1.1 o 1.2?");
-        
+        respuestas.add("¿Su ordenador es portatil o de sobremesa?");//añadidas preguntas cepo
+        respuestas.add("¿Que version utiliza, 1.1 o 1.2?");//añadidas preguntas cepo
         respuestasCohincide.put("portatil" , "Has comprobado que esta version es para portatil?");//añado las respuestas y la palabra clave al hasmap
         respuestasCohincide.put("sobremesa","Todas las versiones son compatibles con sobremesa");
         respuestasCohincide.put("1.1","Actualice a la version mas reciente su sw");
